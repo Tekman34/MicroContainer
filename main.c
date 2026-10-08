@@ -73,7 +73,13 @@ int child_payload(void *arg) {
 }
 
 int main(int argc, char *argv[]) {
-    printf("Parent: Starting microjail...\n");
+    // Print a cool cyan startup banner
+    printf("\033[1;36m"); 
+    printf("=========================================\n");
+    printf("             🚀 MICROJAIL 🚀             \n");
+    printf("=========================================\n");
+    printf("\033[0m"); 
+    printf("[*] Engine starting...\n");
 
     // 1. Allocate memory for the child process's stack
     char *child_stack = malloc(STACK_SIZE);
