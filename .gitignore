@@ -1,0 +1,7 @@
+# Compiled binary
+microjail
+*.o
+
+# Downloaded files and extracted rootfs
+rootfs/
+alpine.tar.gz
